@@ -14,8 +14,52 @@
     "--wo-usage-notes=nonstandard,offensive-1,offensive-2",
     "--deaccent"
   ],
-  "entries": 80735,
-  "words_sha256": "7f93e8fa161a7c28708c6581142bccd25a0d284b2f3483c56218b4da4971664f",
+  "entries": 80715,
+  "editorial_exclusions": [
+    "COON",
+    "COONS",
+    "DAGO",
+    "DAGOES",
+    "DAGOS",
+    "DARKIE",
+    "DARKIES",
+    "DARKY",
+    "FAGGOT",
+    "FAGGOTS",
+    "GOLLIWOG",
+    "GOLLIWOGG",
+    "GOLLIWOGGS",
+    "GOLLIWOGS",
+    "GOLLYWOG",
+    "GOLLYWOGS",
+    "JIGABOO",
+    "JIGABOOS",
+    "KIKE",
+    "KIKES",
+    "MONGOLOID",
+    "MONGOLOIDS",
+    "NIGGA",
+    "NIGGAS",
+    "NIGGER",
+    "NIGGERS",
+    "PAKI",
+    "PAKIS",
+    "RAGHEAD",
+    "RAGHEADS",
+    "REDSKIN",
+    "REDSKINS",
+    "SPIC",
+    "SPICK",
+    "SPICKS",
+    "SPICS",
+    "TOWELHEAD",
+    "TOWELHEADS",
+    "WETBACK",
+    "WETBACKS",
+    "WOG",
+    "WOGS"
+  ],
+  "words_sha256": "ddd5d80060e8147eeb8f4595170f05a6f60232394f7ef78de664879de99cf8cf",
   "puzzles": [
     {
       "index": 0,
@@ -185,7 +229,7 @@
       "index": 13,
       "letters": "GILNOSW",
       "center": "O",
-      "words": 125,
+      "words": 122,
       "pangrams": [
         "SLOWING"
       ]
@@ -238,10 +282,9 @@
       "index": 18,
       "letters": "DGILMNO",
       "center": "I",
-      "words": 89,
+      "words": 88,
       "pangrams": [
-        "MOLDING",
-        "MONGOLOID"
+        "MOLDING"
       ]
     },
     {
@@ -400,7 +443,7 @@
       "index": 33,
       "letters": "FGILNOW",
       "center": "I",
-      "words": 76,
+      "words": 75,
       "pangrams": [
         "FLOWING",
         "FOLLOWING",
@@ -507,7 +550,7 @@
       "index": 43,
       "letters": "CEIKPRT",
       "center": "E",
-      "words": 109,
+      "words": 108,
       "pangrams": [
         "PICKETER"
       ]

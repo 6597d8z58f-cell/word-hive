@@ -1,0 +1,4 @@
+{
+  "policy": "Editorial exclusions for selected slurs missed by source tags. Exact word forms only; no substring matching. This is an additional filter, not a claim that the source has been exhaustively reviewed.",
+  "words": ["NIGGER", "NIGGERS", "NIGGA", "NIGGAS", "KIKE", "KIKES", "GOLLIWOG", "GOLLIWOGS", "GOLLIWOGG", "GOLLIWOGGS", "GOLLYWOG", "GOLLYWOGS", "WOG", "WOGS", "MONGOLOID", "MONGOLOIDS", "FAGGOT", "FAGGOTS", "SPIC", "SPICS", "SPICK", "SPICKS", "WETBACK", "WETBACKS", "DARKIE", "DARKIES", "DARKY", "DAGO", "DAGOS", "DAGOES", "PAKI", "PAKIS", "REDSKIN", "REDSKINS", "RAGHEAD", "RAGHEADS", "TOWELHEAD", "TOWELHEADS", "JIGABOO", "JIGABOOS", "COON", "COONS"]
+}

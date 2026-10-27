@@ -5,8 +5,12 @@ Play at https://6597d8z58f-cell.github.io/word-hive/.
 The site is a self-contained `index.html`, published by the existing GitHub Pages deployment from `main`.
 
 - 45 puzzle configurations, selected deterministically by the player's local calendar date.
-- Practice puzzles, return-to-daily navigation, and automatic daily rollover.
-- 80,735 bundled English word forms from ESDB, with American and British spellings.
+- Dark honey styling, responsive desktop panels, and mobile touch controls.
+- Daily/Practice controls, another practice hive, and immediate daily rollover checks.
+- Word-length counts, two-letter hints, optional sound, and hold Delete to clear.
+- Daily streaks derived from saved history; streaks bridge yesterday until you play today.
+- Confirmed answer reveals permanently mark a hive as assisted; assisted games remain playable but are excluded from unassisted daily best scores and streaks, and labeled when sharing.
+- 80,715 bundled English word forms from ESDB, with American and British spellings.
 - Saved daily and practice progress in browser local storage, with malformed-record recovery and a backup before dictionary migration.
 - Four-letter words score 1 point; longer words score their length; pangrams add 7 points.
 - Genius at 70% of available points; Queen Bee at 100%.
@@ -23,6 +27,6 @@ npm test
 BASE_URL=https://6597d8z58f-cell.github.io/word-hive/ npm test
 ```
 
-The suite checks dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
+The suite checks sound preferences, hint counts, assisted results, reveal cancellation, streak gaps, hold-to-clear cancellation, score sharing, immediate midnight submissions, dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
 
 Tests use Chromium mobile emulation. Physical iPhone/Safari testing is separate. Optional `CHROMIUM_PATH`, `PLAYWRIGHT_MODULE`, and `SCREENSHOT_DIR` environment variables support custom test environments.

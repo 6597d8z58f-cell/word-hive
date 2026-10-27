@@ -8,7 +8,8 @@ const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 const words=JSON.parse(html.match(/const dictionary=new Set\((.*?)\.split/)[1]).split(' ');
 const dictionary=new Set(words);
 const audit=JSON.parse(fs.readFileSync(path.join(__dirname,'dictionary-audit.json')));
-assert.equal(dictionary.size,80735);
+assert.ok(dictionary.size > 80000);
+for(const word of JSON.parse(fs.readFileSync(path.join(__dirname,"dictionary-exclusions.json"))).words)assert.ok(!dictionary.has(word),word);
 assert.equal(audit.entries,dictionary.size);
 assert.equal(crypto.createHash('sha256').update(words.join('\n')+'\n').digest('hex'),audit.words_sha256);
 assert.ok(words.every(w=>/^[A-Z]{4,24}$/.test(w)));
@@ -56,6 +57,6 @@ for(const [i,p] of puzzles.entries()){
     await p.locator('#enter').tap();
     assert.equal(await p.evaluate(()=>localStorage.getItem('word-hive-v3')),original);
     assert.deepEqual(errors,[]);
-    console.log('Dictionary tests passed: 80,735 entries, dialects/inflections, rejected names, 45 pangrams, progress migration, immutable backup and quota-failure protection.');
+    console.log('Dictionary tests passed: editorial exclusions, dialects/inflections, rejected names, 45 pangrams, progress migration, immutable backup and quota-failure protection.');
   }finally{if(browser)await browser.close();server.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -24,7 +24,8 @@ args = ['./scowl', 'word-list', '60', 'A,B,Z', '1', '--categories=',
         '--wo-usage-notes=nonstandard,offensive-1,offensive-2', '--deaccent']
 result = subprocess.run(args, cwd=source, check=True, capture_output=True, text=True)
 # Keep lowercase source entries BEFORE converting case. Names are not lowercased into eligibility.
-words = sorted({w.upper() for w in result.stdout.splitlines() if re.fullmatch(r'[a-z]{4,24}', w)})
+exclusions = set(json.loads((root / 'dictionary-exclusions.json').read_text())['words'])
+words = sorted({w.upper() for w in result.stdout.splitlines() if re.fullmatch(r'[a-z]{4,24}', w)} - exclusions)
 assert len(words) > 70000
 html_path = root / 'index.html'
 html = html_path.read_text()
@@ -48,7 +49,7 @@ for i, puzzle in enumerate(puzzles):
     audit.append(dict(index=i, **puzzle, words=len(valid), pangrams=pangrams))
 (root / 'dictionary-audit.json').write_text(json.dumps({
     'source': 'https://github.com/en-wl/wordlist', 'source_commit': commit,
-    'command': args, 'entries': len(words),
+    'command': args, 'entries': len(words), 'editorial_exclusions': sorted(exclusions),
     'words_sha256': hashlib.sha256(('\n'.join(words)+'\n').encode()).hexdigest(),
     'puzzles': audit,
 }, indent=2) + '\n')

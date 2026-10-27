@@ -1,6 +1,6 @@
 # Word Hive dictionary
 
-Word Hive bundles **80,735 English word forms** from the English Speller Database (ESDB, formerly SCOWL), at revision `1e5b7d3a72f47a71da5d28686c1dd4b397178485`.
+Word Hive bundles **80,715 English word forms** from the English Speller Database (ESDB, formerly SCOWL), at revision `1e5b7d3a72f47a71da5d28686c1dd4b397178485`.
 
 Source: https://github.com/en-wl/wordlist
 
@@ -11,6 +11,7 @@ Source: https://github.com/en-wl/wordlist
 - Between 4 and 24 letters; every word must use the hive letters and include its center.
 - Accents are converted to plain letters. Entries with apostrophes, hyphens, spaces, digits or punctuation are excluded.
 - Proper names, abbreviations, word fragments, nonstandard entries and the source's offensive-1/offensive-2 categories are excluded. Only entirely lowercase source entries are retained before conversion to uppercase. Ordinary words that also serve as names, such as robin, remain valid.
+- `dictionary-exclusions.json` applies an additional exact-word editorial filter for selected slurs missing source tags. It currently removes 20 otherwise eligible word forms; it is not an exhaustive editorial review.
 
 This is a spelling dictionary, not an official NYT word list. Some uncommon and technical words remain. The full dictionary is bundled in the page and word validation requires no network request.
 
@@ -43,6 +44,6 @@ cd ..
 python3 /path/to/word-hive/build-dictionary.py /path/to/wordlist
 ```
 
-The builder pins the source commit, selects size 60 with American/British dialects and variant level 1, applies the documented category and lowercase filters, and writes the inline dictionary, license, and `dictionary-audit.json`. The audit records the exact command, word-list checksum, word counts and pangrams for every hive. Run `npm test` after rebuilding.
+The builder pins the source commit, selects size 60 with American/British dialects and variant level 1, applies the documented category and lowercase filters, and writes the inline dictionary, license, and `dictionary-audit.json`. The audit records the exact command, word-list checksum, editorial exclusions, word counts and pangrams for every hive. Run `npm test` after rebuilding.
 
 The source permission notice is included in [DICTIONARY-LICENSE.txt](DICTIONARY-LICENSE.txt) and inside the self-contained game HTML.
