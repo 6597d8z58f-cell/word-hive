@@ -1,0 +1,7 @@
+{
+  "name": "word-hive",
+  "private": true,
+  "version": "3.1.0",
+  "scripts": { "test": "node tests/mobile.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
