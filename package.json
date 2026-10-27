@@ -1,7 +1,11 @@
 {
   "name": "word-hive",
   "private": true,
-  "version": "3.1.0",
-  "scripts": { "test": "node tests/mobile.cjs" },
-  "devDependencies": { "playwright": "1.62.1" }
+  "version": "3.2.0",
+  "scripts": {
+    "test": "node dictionary-tests.cjs && node tests/mobile.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
 }

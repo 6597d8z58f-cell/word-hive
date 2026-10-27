@@ -1,0 +1,528 @@
+{
+  "source": "https://github.com/en-wl/wordlist",
+  "source_commit": "1e5b7d3a72f47a71da5d28686c1dd4b397178485",
+  "command": [
+    "./scowl",
+    "word-list",
+    "60",
+    "A,B,Z",
+    "1",
+    "--categories=",
+    "--wo-poses=abbr,pre,suf,wp,we,x",
+    "--wo-pos-classes=person,surname,place,name,name?,upper,upper?,demonym,trademark,abbr,abbr?",
+    "--wo-pos-categories=nonword,special,wordpart",
+    "--wo-usage-notes=nonstandard,offensive-1,offensive-2",
+    "--deaccent"
+  ],
+  "entries": 80735,
+  "words_sha256": "7f93e8fa161a7c28708c6581142bccd25a0d284b2f3483c56218b4da4971664f",
+  "puzzles": [
+    {
+      "index": 0,
+      "letters": "AEGILNR",
+      "center": "A",
+      "words": 186,
+      "pangrams": [
+        "ALIGNER",
+        "ENLARGING",
+        "LEARNING",
+        "REALIGN",
+        "REALIGNING",
+        "REGALING",
+        "RELEARNING"
+      ]
+    },
+    {
+      "index": 1,
+      "letters": "ACDEORT",
+      "center": "R",
+      "words": 251,
+      "pangrams": [
+        "DECORATE",
+        "DECORATED",
+        "DECORATOR",
+        "DETRACTOR",
+        "DOCTORATE",
+        "REDACTOR",
+        "REDCOAT",
+        "REDECORATE",
+        "REDECORATED"
+      ]
+    },
+    {
+      "index": 2,
+      "letters": "AEILMNT",
+      "center": "M",
+      "words": 129,
+      "pangrams": [
+        "AILMENT",
+        "ALIMENT",
+        "ELIMINATE",
+        "ENTAILMENT",
+        "LAMINATE",
+        "LINEAMENT",
+        "MILITIAMEN"
+      ]
+    },
+    {
+      "index": 3,
+      "letters": "GINPRSU",
+      "center": "I",
+      "words": 115,
+      "pangrams": [
+        "PURSING",
+        "PURSUING",
+        "SPURNING",
+        "SPURRING",
+        "SURPRISING",
+        "UNINSPIRING",
+        "UNSURPRISING",
+        "UPRISING",
+        "UPRISINGS",
+        "UPSURGING",
+        "USURPING"
+      ]
+    },
+    {
+      "index": 4,
+      "letters": "DEHIRTW",
+      "center": "E",
+      "words": 167,
+      "pangrams": [
+        "WITHDREW",
+        "WITHERED",
+        "WRITHED"
+      ]
+    },
+    {
+      "index": 5,
+      "letters": "EFMPRUY",
+      "center": "E",
+      "words": 44,
+      "pangrams": [
+        "PERFUMERY"
+      ]
+    },
+    {
+      "index": 6,
+      "letters": "CEGHINR",
+      "center": "E",
+      "words": 74,
+      "pangrams": [
+        "CHEERING",
+        "ENRICHING"
+      ]
+    },
+    {
+      "index": 7,
+      "letters": "BCEHRTU",
+      "center": "E",
+      "words": 61,
+      "pangrams": [
+        "BUTCHER"
+      ]
+    },
+    {
+      "index": 8,
+      "letters": "CEHIRTW",
+      "center": "E",
+      "words": 108,
+      "pangrams": [
+        "TWITCHIER"
+      ]
+    },
+    {
+      "index": 9,
+      "letters": "CEMNOPT",
+      "center": "O",
+      "words": 77,
+      "pangrams": [
+        "COMPETENCE",
+        "COMPETENT",
+        "COMPONENT",
+        "CONTEMPT"
+      ]
+    },
+    {
+      "index": 10,
+      "letters": "GHNOSTU",
+      "center": "O",
+      "words": 101,
+      "pangrams": [
+        "GUNSHOT",
+        "GUNSHOTS",
+        "NOUGHTS",
+        "SHOTGUN",
+        "SHOTGUNS",
+        "UNSOUGHT"
+      ]
+    },
+    {
+      "index": 11,
+      "letters": "GINORTU",
+      "center": "N",
+      "words": 114,
+      "pangrams": [
+        "GROUTING",
+        "OUTRUNNING",
+        "ROUTING",
+        "TORTURING",
+        "TOURING",
+        "TUTORING"
+      ]
+    },
+    {
+      "index": 12,
+      "letters": "CEHNSTU",
+      "center": "E",
+      "words": 119,
+      "pangrams": [
+        "CHESTNUT",
+        "CHESTNUTS"
+      ]
+    },
+    {
+      "index": 13,
+      "letters": "GILNOSW",
+      "center": "O",
+      "words": 125,
+      "pangrams": [
+        "SLOWING"
+      ]
+    },
+    {
+      "index": 14,
+      "letters": "DGINORW",
+      "center": "I",
+      "words": 91,
+      "pangrams": [
+        "DROWNING",
+        "WORDING",
+        "WRONGDOING"
+      ]
+    },
+    {
+      "index": 15,
+      "letters": "EFGILNU",
+      "center": "E",
+      "words": 64,
+      "pangrams": [
+        "ENGULFING",
+        "FUELING",
+        "FUELLING",
+        "FUNNELING",
+        "FUNNELLING",
+        "UNFEELING"
+      ]
+    },
+    {
+      "index": 16,
+      "letters": "ACEHIRV",
+      "center": "R",
+      "words": 83,
+      "pangrams": [
+        "ACHIEVER",
+        "ARCHIVE"
+      ]
+    },
+    {
+      "index": 17,
+      "letters": "AKORSTW",
+      "center": "S",
+      "words": 97,
+      "pangrams": [
+        "ARTWORKS"
+      ]
+    },
+    {
+      "index": 18,
+      "letters": "DGILMNO",
+      "center": "I",
+      "words": 89,
+      "pangrams": [
+        "MOLDING",
+        "MONGOLOID"
+      ]
+    },
+    {
+      "index": 19,
+      "letters": "BGILNRU",
+      "center": "I",
+      "words": 70,
+      "pangrams": [
+        "BLURRING",
+        "BULLRING",
+        "BURBLING",
+        "BURGLING"
+      ]
+    },
+    {
+      "index": 20,
+      "letters": "GHINPSU",
+      "center": "I",
+      "words": 98,
+      "pangrams": [
+        "GUNSHIP",
+        "GUNSHIPS",
+        "PUNISHING",
+        "PUSHING"
+      ]
+    },
+    {
+      "index": 21,
+      "letters": "ACGINRU",
+      "center": "A",
+      "words": 61,
+      "pangrams": [
+        "ACCRUING",
+        "UNCARING"
+      ]
+    },
+    {
+      "index": 22,
+      "letters": "ACEILMT",
+      "center": "E",
+      "words": 94,
+      "pangrams": [
+        "ACCLIMATE",
+        "CLIMATE",
+        "METALLIC"
+      ]
+    },
+    {
+      "index": 23,
+      "letters": "GHINRST",
+      "center": "I",
+      "words": 141,
+      "pangrams": [
+        "NIGHTSHIRT",
+        "NIGHTSHIRTS",
+        "SHIRTING",
+        "THIRSTING"
+      ]
+    },
+    {
+      "index": 24,
+      "letters": "ADELTUV",
+      "center": "L",
+      "words": 88,
+      "pangrams": [
+        "EVALUATED",
+        "VALUATED",
+        "VAULTED"
+      ]
+    },
+    {
+      "index": 25,
+      "letters": "IKORSTU",
+      "center": "S",
+      "words": 94,
+      "pangrams": [
+        "OUTSKIRT",
+        "OUTSKIRTS"
+      ]
+    },
+    {
+      "index": 26,
+      "letters": "CDILORS",
+      "center": "O",
+      "words": 110,
+      "pangrams": [
+        "DISCOLOR",
+        "DISCOLORS"
+      ]
+    },
+    {
+      "index": 27,
+      "letters": "CILMNOT",
+      "center": "O",
+      "words": 64,
+      "pangrams": [
+        "LOCOMOTION"
+      ]
+    },
+    {
+      "index": 28,
+      "letters": "GINRSTU",
+      "center": "I",
+      "words": 134,
+      "pangrams": [
+        "RUSTING",
+        "STRUTTING",
+        "SUTURING",
+        "TRUSSING",
+        "TRUSTING",
+        "TURNINGS"
+      ]
+    },
+    {
+      "index": 29,
+      "letters": "BGILNOT",
+      "center": "O",
+      "words": 102,
+      "pangrams": [
+        "BLOTTING",
+        "BOLTING",
+        "BOTTLING"
+      ]
+    },
+    {
+      "index": 30,
+      "letters": "AEHLTWY",
+      "center": "L",
+      "words": 58,
+      "pangrams": [
+        "WEALTHY"
+      ]
+    },
+    {
+      "index": 31,
+      "letters": "BCEKNRU",
+      "center": "E",
+      "words": 30,
+      "pangrams": [
+        "RUBBERNECK",
+        "RUBBERNECKER"
+      ]
+    },
+    {
+      "index": 32,
+      "letters": "CDEHLSU",
+      "center": "E",
+      "words": 135,
+      "pangrams": [
+        "SCHEDULE",
+        "SCHEDULED",
+        "SCHEDULES"
+      ]
+    },
+    {
+      "index": 33,
+      "letters": "FGILNOW",
+      "center": "I",
+      "words": 76,
+      "pangrams": [
+        "FLOWING",
+        "FOLLOWING",
+        "FOWLING",
+        "WOLFING"
+      ]
+    },
+    {
+      "index": 34,
+      "letters": "CDEFINO",
+      "center": "E",
+      "words": 103,
+      "pangrams": [
+        "COFFINED",
+        "CONFIDE",
+        "CONFIDED",
+        "CONFIDENCE",
+        "CONFINED"
+      ]
+    },
+    {
+      "index": 35,
+      "letters": "CEMOSTU",
+      "center": "S",
+      "words": 147,
+      "pangrams": [
+        "COMMUTES",
+        "COSTUME",
+        "COSTUMES",
+        "OUTCOMES"
+      ]
+    },
+    {
+      "index": 36,
+      "letters": "ACHINTY",
+      "center": "A",
+      "words": 54,
+      "pangrams": [
+        "HYACINTH"
+      ]
+    },
+    {
+      "index": 37,
+      "letters": "CEIMRTU",
+      "center": "E",
+      "words": 104,
+      "pangrams": [
+        "TURMERIC"
+      ]
+    },
+    {
+      "index": 38,
+      "letters": "DEGHILT",
+      "center": "E",
+      "words": 87,
+      "pangrams": [
+        "DELIGHT",
+        "DELIGHTED",
+        "HIGHLIGHTED",
+        "LIGHTED"
+      ]
+    },
+    {
+      "index": 39,
+      "letters": "BGHORSU",
+      "center": "O",
+      "words": 47,
+      "pangrams": [
+        "BOROUGHS"
+      ]
+    },
+    {
+      "index": 40,
+      "letters": "CEHKLSU",
+      "center": "E",
+      "words": 71,
+      "pangrams": [
+        "CHUCKLES"
+      ]
+    },
+    {
+      "index": 41,
+      "letters": "ACILRTY",
+      "center": "A",
+      "words": 90,
+      "pangrams": [
+        "ALACRITY",
+        "CLARITY",
+        "CRITICALITY",
+        "CRITICALLY"
+      ]
+    },
+    {
+      "index": 42,
+      "letters": "KORSTUW",
+      "center": "S",
+      "words": 80,
+      "pangrams": [
+        "OUTWORKS",
+        "WORKOUTS"
+      ]
+    },
+    {
+      "index": 43,
+      "letters": "CEIKPRT",
+      "center": "E",
+      "words": 109,
+      "pangrams": [
+        "PICKETER"
+      ]
+    },
+    {
+      "index": 44,
+      "letters": "CEFINOT",
+      "center": "N",
+      "words": 81,
+      "pangrams": [
+        "COEFFICIENT",
+        "CONFECTION",
+        "CONFETTI",
+        "INFECTION"
+      ]
+    }
+  ]
+}

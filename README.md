@@ -6,13 +6,13 @@ The site is a self-contained `index.html`, published by the existing GitHub Page
 
 - 45 puzzle configurations, selected deterministically by the player's local calendar date.
 - Practice puzzles, return-to-daily navigation, and automatic daily rollover.
-- 5,331 bundled dictionary entries, including 12 common omissions repaired during testing.
-- Saved daily and practice progress in browser local storage, with malformed-record recovery.
+- 80,735 bundled English word forms from ESDB, with American and British spellings.
+- Saved daily and practice progress in browser local storage, with malformed-record recovery and a backup before dictionary migration.
 - Four-letter words score 1 point; longer words score their length; pangrams add 7 points.
 - Genius at 70% of available points; Queen Bee at 100%.
 - Success and pangram animations, reduced-motion support, hints, stats, and score sharing.
 
-The bundled lexicon is not an official NYT dictionary. It includes proper names and uncommon entries; dictionary membership is enforced, but the list needs further editorial curation. Daily configurations can repeat. Progress is specific to the browser and device and is unavailable when browser storage is blocked.
+The bundled lexicon is not an official NYT dictionary. Proper-name and abbreviation categories are excluded, while ordinary words that also happen to be names remain valid. See [dictionary policy and reproducible build](DICTIONARY.md). Daily configurations can repeat. Progress is specific to the browser and device and is unavailable when browser storage is blocked.
 
 ## Tests
 
@@ -23,6 +23,6 @@ npm test
 BASE_URL=https://6597d8z58f-cell.github.io/word-hive/ npm test
 ```
 
-The suite tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
+The suite checks dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
 
 Tests use Chromium mobile emulation. Physical iPhone/Safari testing is separate. Optional `CHROMIUM_PATH`, `PLAYWRIGHT_MODULE`, and `SCREENSHOT_DIR` environment variables support custom test environments.
