@@ -5,7 +5,10 @@ Play at https://6597d8z58f-cell.github.io/word-hive/.
 The site is a self-contained `index.html`, published by the existing GitHub Pages deployment from `main`.
 
 - 45 puzzle configurations, selected deterministically by the player's local calendar date.
-- Dark honey styling, responsive desktop panels, and mobile touch controls.
+- Dark honey styling, responsive desktop panels, larger hive letters, and mobile touch controls.
+- Tap found words for definitions from the Free Dictionary API, with source/license attribution, in-session caching, and missing/offline states. No lookups happen until a found word is tapped. Definitions need a connection; gameplay validation remains bundled.
+- A local-date puzzle calendar from October 26, 2026, with saved, assisted, Genius and completed states. Archive progress shares its original date record; newly played archive dates do not count toward streaks or the on-date unassisted best. Future days stay locked.
+- First-pangram, Genius and Queen Bee celebrations, with persistent achievement badges and reduced-motion support. Celebrations happen on earning, not on reload.
 - Daily/Practice controls, another practice hive, and immediate daily rollover checks.
 - Drag any outer letter onto another to swap positions; the center stays fixed. Touch, mouse and pen use Pointer Events, with a Shift + Left/Right keyboard alternative. Drops outside an outer tile cancel without typing.
 - Word-length counts, two-letter hints, optional sound, and hold Delete to clear.
@@ -28,6 +31,6 @@ npm test
 BASE_URL=https://6597d8z58f-cell.github.io/word-hive/ npm test
 ```
 
-The suite checks mouse and emulated touch drags, cancelled and invalid drops, fixed center, keyboard swaps, sound preferences, hint counts, assisted results, reveal cancellation, streak gaps, hold-to-clear cancellation, score sharing, immediate midnight submissions, dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
+The suite checks definition loading/cache/failures, calendar boundaries and month navigation, archive progress and streak isolation, milestone thresholds without replay, larger-letter layouts, mouse and emulated touch drags, cancelled and invalid drops, fixed center, keyboard swaps, sound preferences, hint counts, assisted results, reveal cancellation, streak gaps, hold-to-clear cancellation, score sharing, immediate midnight submissions, dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
 
 Tests use Chromium mobile emulation. Physical iPhone/Safari testing is separate. Optional `CHROMIUM_PATH`, `PLAYWRIGHT_MODULE`, and `SCREENSHOT_DIR` environment variables support custom test environments.

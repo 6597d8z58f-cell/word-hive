@@ -1,9 +1,9 @@
 {
   "name": "word-hive",
   "private": true,
-  "version": "4.1.0",
+  "version": "4.2.0",
   "scripts": {
-    "test": "node dictionary-tests.cjs && node features-tests.cjs && node drag-tests.cjs && node tests/mobile.cjs"
+    "test": "node dictionary-tests.cjs && node features-tests.cjs && node drag-tests.cjs && node discovery-tests.cjs && node tests/mobile.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"
