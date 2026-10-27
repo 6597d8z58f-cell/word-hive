@@ -7,6 +7,7 @@ The site is a self-contained `index.html`, published by the existing GitHub Page
 - 45 puzzle configurations, selected deterministically by the player's local calendar date.
 - Dark honey styling, responsive desktop panels, and mobile touch controls.
 - Daily/Practice controls, another practice hive, and immediate daily rollover checks.
+- Drag any outer letter onto another to swap positions; the center stays fixed. Touch, mouse and pen use Pointer Events, with a Shift + Left/Right keyboard alternative. Drops outside an outer tile cancel without typing.
 - Word-length counts, two-letter hints, optional sound, and hold Delete to clear.
 - Daily streaks derived from saved history; streaks bridge yesterday until you play today.
 - Confirmed answer reveals permanently mark a hive as assisted; assisted games remain playable but are excluded from unassisted daily best scores and streaks, and labeled when sharing.
@@ -27,6 +28,6 @@ npm test
 BASE_URL=https://6597d8z58f-cell.github.io/word-hive/ npm test
 ```
 
-The suite checks sound preferences, hint counts, assisted results, reveal cancellation, streak gaps, hold-to-clear cancellation, score sharing, immediate midnight submissions, dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
+The suite checks mouse and emulated touch drags, cancelled and invalid drops, fixed center, keyboard swaps, sound preferences, hint counts, assisted results, reveal cancellation, streak gaps, hold-to-clear cancellation, score sharing, immediate midnight submissions, dictionary membership, all 45 pangrams, and migration of saved progress, then tests touch input, delete/shuffle, scoring, duplicate and invalid-word rejection, animations, reduced motion, local-midnight rollover, saved daily/practice progress, malformed and blocked storage, all puzzle structures, completion rank, and layouts at 320, 375, 390, 412 and 844 pixels. It runs isolated browser contexts and does not change any player's progress.
 
 Tests use Chromium mobile emulation. Physical iPhone/Safari testing is separate. Optional `CHROMIUM_PATH`, `PLAYWRIGHT_MODULE`, and `SCREENSHOT_DIR` environment variables support custom test environments.
