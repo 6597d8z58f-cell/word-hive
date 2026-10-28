@@ -33,7 +33,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
  const bestBefore=await page.locator('#stats').textContent();
  await page.locator('#reveal').tap();await page.locator('#reveal').tap();
  assert.equal(await page.locator('#assisted').isVisible(),true);assert.equal(await page.locator('#score').textContent(),'2 pts');
- assert.equal(await page.locator('#answers span').count(),79);
+ assert.equal(await page.locator('#answers .word-definition').count(),79);
  assert.match(await page.locator('#streak').textContent(),/2-day streak/);
  await tapWord('COEFFICIENT');assert.equal(await page.locator('#score').textContent(),'20 pts');
  assert.ok(!(await page.locator('#stats').textContent()).includes('Best: 20 points'));
